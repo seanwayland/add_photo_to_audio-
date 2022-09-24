@@ -19,6 +19,11 @@ def add_static_image_to_audio(image_path, audio_path, output_path):
     # write the resuling video clip
     video_clip.write_videofile(output_path)
 
+song_names = ['im controllin you']
+for song_name in song_names: 
 
-add_static_image_to_audio('directed-by-robert-image.jpg','Directed-by-Robert-B.-Weide-theme.mp3','output_5.mp4')
+    photo_path = "./photos/" + song_name + ".png"
+    mp3_path = "./audio/" + song_name + ".mp3"
+    video_path = "./videos/" + song_name + ".mp4"
+    add_static_image_to_audio(photo_path,mp3_path,video_path)
 
